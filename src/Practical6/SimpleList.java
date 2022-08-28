@@ -21,7 +21,7 @@ public class SimpleList<T> {
         nodeCount=0;
         countNode = firstNode;
     }
-
+//sss
     @Override
     public String toString() {
         return toString(firstNode);
