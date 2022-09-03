@@ -44,21 +44,23 @@ public class SortedArrayList<T extends Comparable<T>> implements SortedListInter
         i++;
       }
       // call removeGap
-      removeGap(i + 1);
-      // entry-1
-      numberOfEntries--;
-      return true;
+      if (array[i].equals(anEntry)) {
+        removeGap(i + 1);
+        numberOfEntries--;
+        return true;
+      }
+      return false;
     }
 
     // int i = 0;
     // boolean found = false;
     // for (i = 0; i < numberOfEntries; i++) {
-    //   if (array[i].compareTo(anEntry) == 0) {
-    //     removeGap(i + 1);
-    //     numberOfEntries--;
-    //     found = true;
-    //     break;
-    //   }
+    // if (array[i].compareTo(anEntry) == 0) {
+    // removeGap(i + 1);
+    // numberOfEntries--;
+    // found = true;
+    // break;
+    // }
     // }
     // return found;
   }
