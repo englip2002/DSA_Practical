@@ -2,7 +2,7 @@ package Practical7;
 
 //allow us to redefine .compareTo()
  
-public abstract class Employee implements Comparable {
+public abstract class Employee {
     ///CLASS ATTRIBUTES / CLASS FIELDS
     private int id;
     private String name;
