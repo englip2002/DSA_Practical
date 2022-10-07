@@ -158,7 +158,7 @@ public class Registration extends javax.swing.JFrame {
     jtfNumber.setText("" + Runner.getNextNumber());
     // jtaResult.setText("Runner List: \n" + formatList(runnerList));
     jtfName.setText("");
-    jtfName.grabFocus();// TODO add your handling code here:
+    jtfName.grabFocus();
   }//GEN-LAST:event_jbtAddActionPerformed
 
   private void jbtDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtDisplayActionPerformed
@@ -181,7 +181,6 @@ public class Registration extends javax.swing.JFrame {
   }//GEN-LAST:event_jbtCloseActionPerformed
 
     private void jtfNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfNumberActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jtfNumberActionPerformed
 
   public String formatList() {

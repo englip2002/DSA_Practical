@@ -3,6 +3,7 @@ package Practical8.adt;
 /**
  * SortedArrayList - Implements the ADT Sorted List using an array. - Note: Some
  * methods are not implemented yet and have been left as practical exercises
+ * 
  * @param <T>
  */
 public class SortedArrayList<T extends Comparable<T>> implements SortedListInterface<T> {
@@ -41,22 +42,22 @@ public class SortedArrayList<T extends Comparable<T>> implements SortedListInter
   }
 
   public boolean contains(T anEntry) {
-//    boolean found = false;
-//    for (int index = 0; !found && (index < numberOfEntries); index++) {
-//      if (anEntry.equals(array[index])) {
-//        found = true;
-//      }
-//    }
-//    return found;
+    // boolean found = false;
+    // for (int index = 0; !found && (index < numberOfEntries); index++) {
+    // if (anEntry.equals(array[index])) {
+    // found = true;
+    // }
+    // }
+    // return found;
 
-    //Modified Algorithm for linear search
-    //add new condition to stop the loop
-    for(int i = 0; (i< numberOfEntries)&&(anEntry.compareTo(array[i])>=0);i++){
-        System.out.println(i+1);
-        if(anEntry.equals(array[i]))
-            return true;
+    // Modified Algorithm for linear search
+    // add new condition to stop the loop
+    for (int i = 0; (i < numberOfEntries) && (anEntry.compareTo(array[i]) >= 0); i++) {
+      System.out.println(i + 1);
+      if (anEntry.equals(array[i]))
+        return true;
     }
-    return false; //value not found
+    return false; // value not found
   }
 
   public int getNumberOfEntries() {

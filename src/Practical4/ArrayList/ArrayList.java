@@ -3,7 +3,6 @@ package Practical4.ArrayList;
 import java.io.Serializable;
 
 public class ArrayList<T> implements ListInterface<T>, Serializable {
-
     private T[] array;
     private int numberOfEntries;
     private static final int DEFAULT_CAPACITY = 5;

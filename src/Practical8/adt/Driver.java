@@ -1,6 +1,6 @@
 package Practical8.adt;
 
-import entity.Name;
+import Practical8.entity.Name;
 
 /**
  * A driver that demonstrates the class SortedArrayList.

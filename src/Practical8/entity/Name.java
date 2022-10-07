@@ -1,4 +1,4 @@
-package entity;
+package Practical8.entity;
 
 /**
  * A mutable class that represents a person's name. 
