@@ -32,7 +32,7 @@ public class ArrayList<T> implements ListInterface<T>, Serializable {
         boolean isSuccessful = true;
 
         if (isFull()) {
-            increaseArraySize();;
+            increaseArraySize();
         }
 
         if ((newPosition >= 1) && (newPosition <= numberOfEntries + 1)) {

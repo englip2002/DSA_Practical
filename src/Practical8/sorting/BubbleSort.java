@@ -11,14 +11,14 @@ public class BubbleSort {
       for (int index = 0; index < n - pass; index++) {
         // swap adjacent elements if first is greater than second
         if (a[index] > a[index + 1]) {
-          swap(a, index, index + 1); // swap adjacent elements 
-          sorted = false;  // array not sorted because a swap was performed
+          swap(a, index, index + 1); // swap adjacent elements
+          sorted = false; // array not sorted because a swap was performed
         }
-      } 
-      System.out.print("After pass " + pass + ": ");  // trace statement
-      display(a, n);                                  // trace statement
-    } 
-  } 
+      }
+      System.out.print("After pass " + pass + ": "); // trace statement
+      display(a, n); // trace statement
+    }
+  }
 
   // helper method to swap values in two array elements
   public static void swap(int[] array, int first, int second) {
@@ -32,14 +32,13 @@ public class BubbleSort {
       System.out.print(element + " ");
     }
     System.out.println();
-  } 
+  }
 
   public static void main(String[] args) {
-    int[] numberArray = {23, 78, 45, 8, 32, 56};
+    int[] numberArray = { 23, 78, 45, 8, 32, 56 };
 
     bubbleSort(numberArray, numberArray.length);
     System.out.print("After bubbleSort(): ");
     display(numberArray, numberArray.length);
   }
-
 }

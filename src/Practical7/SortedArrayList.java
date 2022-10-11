@@ -22,7 +22,7 @@ public class SortedArrayList<T extends Comparable<T>> implements SortedListInter
   public boolean add(T newEntry) {
     int i = 0;
     // if newEntry is bigger than array[i] then continue loop
-    // stop when it is found a data in array which is smaller than newEntry (<0)
+    // stop when it is found new entry is smaller than a data in array (<0)
     while (i < numberOfEntries && newEntry.compareTo(array[i]) > 0) {
       i++;
     }
@@ -37,10 +37,10 @@ public class SortedArrayList<T extends Comparable<T>> implements SortedListInter
     if (isEmpty()) {
       return false;
     } else {
-      // find position by keep loop if anEntry is smaller than array[i]
-      // stop when array[i] > anEntry
+      // find position by keep loop if anEntry is bigger than array[i], when =0, then stop (index found)
+      // stop when array[i] > anEntry (no need to keep search since there is no possible to exist) 
       int i = 0;
-      while (i < numberOfEntries && anEntry.compareTo(array[i]) < 0) {
+      while (i < numberOfEntries && anEntry.compareTo(array[i]) > 0) {
         i++;
       }
       // call removeGap

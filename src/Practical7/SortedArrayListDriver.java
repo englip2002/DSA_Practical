@@ -21,6 +21,9 @@ public class SortedArrayListDriver {
     
     String movieName = "The A-Team";
     System.out.printf("movieList contains %s: %b\n", movieName, movieList.contains(movieName));
+
+    movieList.remove("The A-Team");
+    System.out.println("\nMovie List: \n" + movieList);
     
   }
 }
